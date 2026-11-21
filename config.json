@@ -1,0 +1,13 @@
+{
+  "services": [
+    {"name": "SSH local", "host": "127.0.0.1", "port": 22, "protocol": "ssh"},
+    {"name": "FTP local", "host": "127.0.0.1", "port": 21, "protocol": "ftp"},
+    {"name": "DNS local", "host": "127.0.0.1", "port": 53, "protocol": "dns", "domain": "example.com"},
+    {"name": "HTTP local", "host": "127.0.0.1", "port": 80, "protocol": "http"},
+    {"name": "MQTT local", "host": "127.0.0.1", "port": 1883, "protocol": "tcp"}
+  ],
+  "auth_logs": ["/var/log/auth.log", "/var/log/secure"],
+  "auth_tail_lines": 3000,
+  "auth_alert_threshold": 5,
+  "watch_files": ["/etc/ssh/sshd_config", "/etc/passwd", "/etc/bind"]
+}
